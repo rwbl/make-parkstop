@@ -1,2 +1,77 @@
 # make_project_parkstop
-Build a parkSTOP device to visually indicate via LED if parking position is reached.
+
+# Objectives
+* To build a parkSTOP device to visually indicate via LED if parking position is reached.
+* In addition, indicate via Android App, comunicating via Bluetooth, the actual distance and if parking position reached.
+* Usage f.e. to park in the garage for cars without parking distance sensors or park at an exact position.
+
+img:parkstop-f.png
+
+## Functionality
+* ParkSTOP Device: Indicate position LED RED = reached Stop distance, YELLOW = reached Warning distance (=1.5 times stop distance), GREEN = reached between notify distance and warning distance.
+* ParkSTOP Device: Alarm (via Buzzer) when reaching warning or stop distance.
+* ParkSTOP Device: Store settings (in EEPROM).
+* Android App: Show distance, indicator meter with bar to see position, indicate to stop, set stop-/ notify distance and if buzzer on.
+* Communication via Bluetooth between the devices e.g. ParkSTOP device and Android App.
+* Open to connect other Bluetooth devices (but only one at the time).
+
+## Creation Rules
+* Use as microcontroller an Arduino UNO.
+* Use standard LEGO bricks.
+* Minimize LEGO brick modifications.
+* LEGO Case with modular components.
+* Build code with B4R and B4A.
+
+## Hardware Parts (approx cost EUR)
+* 1x Arduino UNO (8 EUR)
+* 1x HC-05 Bluetooth Adapter (7 EUR)
+* 1x HC-SR04 Ultrasonic Distance Sensor (2 EUR)
+* 1x Buzzer (1.75 EUR)
+* 3x LED (0.75 EUR)
+* In addition for the prototype: Breadboard (2 EUR)
+* LEGO bricks [LEGO is a trademark of the LEGO Group] (10 EUR)
+
+## Software
+* Min software versions required:
+* Arduino IDE 1.8.0
+* B4R v1.80
+* B4A v6.50
+
+## Wiring
+img:parkstop_bb.png
+
+```
+#Arduino = Buttons (WireColors)
+#Bluetooth
+[CODE]HC-05 = Arduino
+VCC = 5v (red)
+GND = GND (black)
+TX = 10 Receive Pin (green)
+RX = 11 Transmit Pin (yellow)
+[/CODE]
+#Distance
+[CODE]HC-SR04 = Arduino
+VCC = 5v (red)
+Trigger = D8 (blue)
+Echo = D7 (white)
+GND = GND (black)
+[/CODE]
+#Indicators
+[CODE]LED RED = STOP
+LED = Arduino
+Anode (+) = D4
+Cathode (-) = GND
+LED YELLOW = WARNING
+LED = Arduino
+Anode (+) = D5
+Cathode (-) = GND
+LED GREEN = OK
+LED = Arduino
+Anode (+) = D6
+Cathode (-) = GND
+[/CODE]
+#Buzzer
+[CODE]Signal = D12 (red)
+GND = GND (black)
+[/CODE]
+```
