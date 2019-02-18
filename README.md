@@ -5,7 +5,7 @@
 * In addition, indicate via Android App, comunicating via Bluetooth, the actual distance and if parking position reached.
 * Usage f.e. to park in the garage for cars without parking distance sensors or park at an exact position.
 
-img:parkstop-f.png
+![parkstop-f](https://user-images.githubusercontent.com/47274144/52939989-bdc49000-3365-11e9-8c03-9f629d3784af.png)
 
 ## Functionality
 * ParkSTOP Device: Indicate position LED RED = reached Stop distance, YELLOW = reached Warning distance (=1.5 times stop distance), GREEN = reached between notify distance and warning distance.
@@ -38,7 +38,7 @@ img:parkstop-f.png
 * B4A v6.50
 
 ## Wiring
-img:parkstop_bb.png
+![parkstop_bb](https://user-images.githubusercontent.com/47274144/52939987-bdc49000-3365-11e9-8f78-1e7b41147569.png)
 
 ```
 #Arduino = Buttons (WireColors)
