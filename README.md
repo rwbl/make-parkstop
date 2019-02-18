@@ -43,21 +43,21 @@
 ```
 #Arduino = Buttons (WireColors)
 #Bluetooth
-[CODE]HC-05 = Arduino
+HC-05 = Arduino
 VCC = 5v (red)
 GND = GND (black)
 TX = 10 Receive Pin (green)
 RX = 11 Transmit Pin (yellow)
-[/CODE]
+
 #Distance
 [CODE]HC-SR04 = Arduino
 VCC = 5v (red)
 Trigger = D8 (blue)
 Echo = D7 (white)
 GND = GND (black)
-[/CODE]
+
 #Indicators
-[CODE]LED RED = STOP
+LED RED = STOP
 LED = Arduino
 Anode (+) = D4
 Cathode (-) = GND
@@ -69,9 +69,8 @@ LED GREEN = OK
 LED = Arduino
 Anode (+) = D6
 Cathode (-) = GND
-[/CODE]
+
 #Buzzer
-[CODE]Signal = D12 (red)
+Signal = D12 (red)
 GND = GND (black)
-[/CODE]
 ```
