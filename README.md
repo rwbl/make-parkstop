@@ -32,10 +32,10 @@
 * LEGO bricks [LEGO is a trademark of the LEGO Group] (10 EUR)
 
 ## Software
-* Min software versions required:
 * Arduino IDE 1.8.0
 * B4R v1.80
 * B4A v6.50
+(Min software versions required)
 
 ## Wiring
 ![parkstop_bb](https://user-images.githubusercontent.com/47274144/52939987-bdc49000-3365-11e9-8f78-1e7b41147569.png)
