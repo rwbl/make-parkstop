@@ -1,4 +1,4 @@
-# make_project_parkstop
+# make_parkstop
 
 # Objectives
 * To build a parkSTOP device to visually indicate via LED if parking position is reached.
